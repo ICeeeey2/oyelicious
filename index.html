@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/512f65f27b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="https://export-download.canva.com/GU_v0/DAF3A-GU_v0/3/0/0001-2449244628038298761.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20231214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231214T152709Z&X-Amz-Expires=48862&X-Amz-Signature=e3c814265014f0dc46b0c4ceb0b0f62b63a5d113321a3d1834316e5610f7a6d6&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27L.png&response-expires=Fri%2C%2015%20Dec%202023%2005%3A01%3A31%20GMT" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#" data-target="home">Home</a></li>
+                    <li><a href="#" data-target="about">About</a></li>
+                    <li><a href="#" data-target="services">Services</a></li>
+                    <li><a href="#" data-target="portfolio">Portfolio</a></li>
+                    <li><a href="#" data-target="contact">Contact</a></li>
+                    <i class="fas fa-times"onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars"onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Designer</p>
+                <h1> Hi, I'm <span>Loriel</span><br>Fernandez </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://scontent.fmnl31-1.fna.fbcdn.net/v/t1.15752-9/385551491_1019741132656767_7407533030015624168_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8cd0a2&_nc_eui2=AeGM3uVJL1EUYYnV5aVaEyKYsoaKBZSsYiuyhooFlKxiK2ty12lwfsL-0jEBNY1EEV2yarEcyNK8NLzWmY92Dd_X&_nc_ohc=BFYXUbyssbwAX8_WQjI&_nc_ht=scontent.fmnl31-1.fna&oh=03_AdSua8CXAt-HFbrXiVpe3h45pbEsq4u823-ZQzGLhW4pwA&oe=65A33D81&dl=1" alt="User Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                       Meet Loriel Fernandez, a second-year Information Technology student at Rizal Technological University. With a passion for technology and a solid foundation in programming and system analysis, Loriel Fernandez is poised to contribute innovative solutions to the dynamic field of IT. Stay tuned for their journey as they navigate the ever-evolving world of technology.
+                    </p>
+                    <!-- Tabs Section -->
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Building Android/iOS apps</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - 2022</span><br>UI/UX Design Training at Rizal Technological University</li>
+                            <li><span>2018 - 2019</span><br>Team lead at eDesign Interactive</li>
+                            <li><span>2016 - 2017</span><br>Internship at Revealize inc</li>
+                            <li><span>2015 - 2016</span><br>UI/UX Design Executive at Coin Digital ltd</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-Current</span><br>College-Rizal Technological University</li>
+                            <li><span>2019-2021</span><br> SHS-Angono National High School</li>
+                            <li><span>2015-2019</span><br> JHS-Angono National High School</li>
+                            <li><span>2009-2015</span><br> Elem-Angono Elementary School  </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Technical Support</h2>
+                    <p>Assist individuals or small businesses with troubleshooting computer issues, software installations, and general technical problems.</p>
+                    <a href="#">Learn more</a>
+                </div> 
+                <div>
+                    <i class="fas fa-crop"></i>
+                    <h2>App Development</h2>
+                    <p>Develop mobile applications for Android or iOS platforms based on client needs or personal projects.</p>
+                    <a href="#">Learn more</a>
+                </div> 
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>I possess comprehensive knowledge and expertise in app design. My proficiency extends across various aspects of the app design process, including user interface (UI) design, user experience (UX) considerations, and the integration of cutting-edge design principles. With a solid foundation in mobile design trends and technologies, I am capable of creating visually appealing and user-friendly app interfaces. My commitment to staying informed about the latest advancements in app design allows me to contribute effectively to the development of innovative and engaging mobile applications.</p>
+                    <a href="#">Learn more</a>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://export-download.canva.com/6jKQQ/DAF2uT6jKQQ/3/0/0001-7769121687717755449.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20231214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231214T161437Z&X-Amz-Expires=44625&X-Amz-Signature=a7f02bc2e759e45268d7d1b1b19a8f16888b5673fcfdca3f21e72b603a120e2b&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%271.png&response-expires=Fri%2C%2015%20Dec%202023%2004%3A38%3A22%20GMT">
+                    <div class="layer">
+                        <h3>MUSIC</h3>
+                        <p>You can jive to the beat</p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://export-download.canva.com/Q2d54/DAF2udQ2d54/4/0/0001-2449244628162624636.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20231214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231214T031931Z&X-Amz-Expires=92697&X-Amz-Signature=f55978a69e519cacdd7eb4aee36165f46b17a8b8a89a1fd7670ace83952c97e6&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%272.png&response-expires=Fri%2C%2015%20Dec%202023%2005%3A04%3A28%20GMT">
+                    <div class="layer">
+                        <h3>Photography</h3>
+                        <p>Capture your smile.</p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://export-download.canva.com/V-Dag/DAF2uTV-Dag/3/0/0001-2449244628856526565.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20231214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231214T092754Z&X-Amz-Expires=69562&X-Amz-Signature=2296f62ed1e928cd0ac933f55b1ae671ad2af48a52566dfbac4837978ee1f66d&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%273.png&response-expires=Fri%2C%2015%20Dec%202023%2004%3A47%3A16%20GMT">
+                    <div class="layer">
+                        <h3>Song</h3>
+                        <p>Romantic songs paly it online</p>
+                        <a href="#"><i class="fas fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> lorielfernandez3@gmail.com</p>
+                    <p><i class="fas fa-square-phone-flip"></i> 09984787563</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Lorieeeeeel"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/loryeeeel_/"><i class="fab fa-instagram"></i></a></a>
+                        <a href="https://export-download.canva.com/_FD3M/DAF2ug_FD3M/11/0-7187031438890875670.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJHKNGJLC2J7OGJ6Q%2F20231215%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231215T014035Z&X-Amz-Expires=13284&X-Amz-Signature=225c3b752235a6f8ce43c04312d2fd0bbe547a57bbd1e3a6529168e40a3c87a9&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27resume.pdf&response-expires=Fri%2C%2015%20Dec%202023%2005%3A21%3A59%20GMT"><class="Download-CV"></class></i></a>
+                    
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>My personal<i class="fa-solid"></i> Website</p>
+    </div>
+
+    <script>
+        var tablinks = document.querySelectorAll("#header ul li a");
+
+        for (var i = 0; i < tablinks.length; i++) {
+            tablinks[i].addEventListener("click", function(event) {
+                event.preventDefault();
+
+                var targetId = this.getAttribute("data-target");
+                var targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+                }
+            });
+        }
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+                tabcontents[i].classList.remove("active-tab");
+            }
+
+            var selectedTab = document.getElementById(tabname);
+            if (selectedTab) {
+                selectedTab.classList.add("active-tab");
+            }
+
+            for (var i = 0; i < tablinks.length; i++) {
+                if (tablinks[i].innerText.toLowerCase() === tabname.toLowerCase()) {
+                    tablinks[i].classList.add("active-link");
+                    break;
+                }
+            }
+        }   
+    </script>
+   <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbyD0CHjcr_mByxoFy29dx-r3oumfuxMLJWzZwI7QI9uMbKwwsqVnQt9WWwEwoT2TZ_C/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("msg");
+
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+                msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+        })
+        .catch(error => console.error('Error!', error.message));
+});
+  </script>
+</body>
+</html>
